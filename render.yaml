@@ -1,0 +1,13 @@
+services:
+  - type: web
+    name: solar-om-scheduler
+    runtime: python
+    plan: free
+    rootDir: backend
+    buildCommand: "pip install -r requirements.txt"
+    startCommand: "uvicorn app.main:app --host 0.0.0.0 --port $PORT"
+    envVars:
+      - key: DATABASE_URL
+        sync: false   # paste your Neon connection string here in Render's dashboard
+      - key: EDITOR_PASSWORD
+        sync: false   # set your own editing password here in Render's dashboard

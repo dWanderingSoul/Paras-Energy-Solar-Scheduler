@@ -1,0 +1,578 @@
+[
+  {
+    "id": 1,
+    "category": "PV Module",
+    "task_name": "Cleaning",
+    "activity": "Clean/Remove dirt, dust, bird droppings and debris from the surface of panels",
+    "frequency_flags": {
+      "daily": false,
+      "weekly": true,
+      "monthly": false,
+      "quarterly": false,
+      "bi_annually": false,
+      "annually": false,
+      "need_basis": true
+    },
+    "primary_frequency": "weekly"
+  },
+  {
+    "id": 2,
+    "category": "PV Module",
+    "task_name": "Check for shading",
+    "activity": "Ensure no obstructions cost shadows on panels",
+    "frequency_flags": {
+      "daily": false,
+      "weekly": false,
+      "monthly": false,
+      "quarterly": true,
+      "bi_annually": false,
+      "annually": false,
+      "need_basis": false
+    },
+    "primary_frequency": "quarterly"
+  },
+  {
+    "id": 3,
+    "category": "PV Module",
+    "task_name": "Mounting hardware inspection",
+    "activity": "Check and tighten bolts and brackets if necessary",
+    "frequency_flags": {
+      "daily": false,
+      "weekly": false,
+      "monthly": false,
+      "quarterly": false,
+      "bi_annually": true,
+      "annually": false,
+      "need_basis": false
+    },
+    "primary_frequency": "bi_annually"
+  },
+  {
+    "id": 4,
+    "category": "PV Module",
+    "task_name": "Vegetation trimming",
+    "activity": "Trim trees or bushes that could shade panels",
+    "frequency_flags": {
+      "daily": false,
+      "weekly": true,
+      "monthly": false,
+      "quarterly": true,
+      "bi_annually": false,
+      "annually": false,
+      "need_basis": true
+    },
+    "primary_frequency": "weekly"
+  },
+  {
+    "id": 5,
+    "category": "PV Module",
+    "task_name": "Visual inspection",
+    "activity": "Check for possible defects like discoloration, delamination or broken glass",
+    "frequency_flags": {
+      "daily": false,
+      "weekly": true,
+      "monthly": false,
+      "quarterly": true,
+      "bi_annually": false,
+      "annually": false,
+      "need_basis": false
+    },
+    "primary_frequency": "weekly"
+  },
+  {
+    "id": 6,
+    "category": "PV Module",
+    "task_name": "Thermal imaging",
+    "activity": "Check for hotspot",
+    "frequency_flags": {
+      "daily": false,
+      "weekly": false,
+      "monthly": false,
+      "quarterly": false,
+      "bi_annually": false,
+      "annually": true,
+      "need_basis": true
+    },
+    "primary_frequency": "annually"
+  },
+  {
+    "id": 7,
+    "category": "PV Module",
+    "task_name": "I-V Test",
+    "activity": "Disconnect strings and perform I-V curve measurement",
+    "frequency_flags": {
+      "daily": false,
+      "weekly": false,
+      "monthly": false,
+      "quarterly": false,
+      "bi_annually": false,
+      "annually": true,
+      "need_basis": false
+    },
+    "primary_frequency": "annually"
+  },
+  {
+    "id": 8,
+    "category": "PV String",
+    "task_name": "Inspection",
+    "activity": "Check PV modules and rack for cracks, scratches and damage",
+    "frequency_flags": {
+      "daily": false,
+      "weekly": false,
+      "monthly": false,
+      "quarterly": false,
+      "bi_annually": true,
+      "annually": false,
+      "need_basis": false
+    },
+    "primary_frequency": "bi_annually"
+  },
+  {
+    "id": 9,
+    "category": "PV String",
+    "task_name": "Inspection",
+    "activity": "Check junction boxes and seal if required",
+    "frequency_flags": {
+      "daily": false,
+      "weekly": false,
+      "monthly": false,
+      "quarterly": false,
+      "bi_annually": true,
+      "annually": false,
+      "need_basis": false
+    },
+    "primary_frequency": "bi_annually"
+  },
+  {
+    "id": 10,
+    "category": "PV String",
+    "task_name": "Inspection",
+    "activity": "Inspect cabling for signs of cracks, defect, loose connection/joint, overheating, arcing, short or open circuits, falls and ground faults",
+    "frequency_flags": {
+      "daily": false,
+      "weekly": false,
+      "monthly": false,
+      "quarterly": true,
+      "bi_annually": false,
+      "annually": false,
+      "need_basis": false
+    },
+    "primary_frequency": "quarterly"
+  },
+  {
+    "id": 11,
+    "category": "Inverter",
+    "task_name": "Wiring and connections check",
+    "activity": "Ensure all connections are secure and free from corrosion",
+    "frequency_flags": {
+      "daily": false,
+      "weekly": false,
+      "monthly": false,
+      "quarterly": true,
+      "bi_annually": false,
+      "annually": false,
+      "need_basis": false
+    },
+    "primary_frequency": "quarterly"
+  },
+  {
+    "id": 12,
+    "category": "Inverter",
+    "task_name": "DC voltage and Current check",
+    "activity": "Check string  DC voltage and current at inverter",
+    "frequency_flags": {
+      "daily": false,
+      "weekly": false,
+      "monthly": true,
+      "quarterly": false,
+      "bi_annually": false,
+      "annually": false,
+      "need_basis": false
+    },
+    "primary_frequency": "monthly"
+  },
+  {
+    "id": 13,
+    "category": "Inverter",
+    "task_name": "AC voltage and Current check",
+    "activity": "Check Inverter voltage and current at LT-Panels",
+    "frequency_flags": {
+      "daily": false,
+      "weekly": true,
+      "monthly": false,
+      "quarterly": false,
+      "bi_annually": false,
+      "annually": false,
+      "need_basis": false
+    },
+    "primary_frequency": "weekly"
+  },
+  {
+    "id": 14,
+    "category": "Inverter",
+    "task_name": "Disconnect switches check",
+    "activity": "Check functionality and ensure proper labeling at Inverter and LT-Panel",
+    "frequency_flags": {
+      "daily": true,
+      "weekly": false,
+      "monthly": false,
+      "quarterly": false,
+      "bi_annually": true,
+      "annually": false,
+      "need_basis": false
+    },
+    "primary_frequency": "daily"
+  },
+  {
+    "id": 15,
+    "category": "Inverter",
+    "task_name": "Inverter logs check",
+    "activity": "Review error logs for any issues or abnormalities",
+    "frequency_flags": {
+      "daily": true,
+      "weekly": false,
+      "monthly": true,
+      "quarterly": false,
+      "bi_annually": false,
+      "annually": false,
+      "need_basis": false
+    },
+    "primary_frequency": "daily"
+  },
+  {
+    "id": 16,
+    "category": "Inverter",
+    "task_name": "Service",
+    "activity": "Remove dust and clean fans",
+    "frequency_flags": {
+      "daily": false,
+      "weekly": false,
+      "monthly": false,
+      "quarterly": false,
+      "bi_annually": true,
+      "annually": false,
+      "need_basis": false
+    },
+    "primary_frequency": "bi_annually"
+  },
+  {
+    "id": 17,
+    "category": "Inverter",
+    "task_name": "Inspection",
+    "activity": "Inspect Inverter shelter for physical maintenance, if required.",
+    "frequency_flags": {
+      "daily": false,
+      "weekly": false,
+      "monthly": true,
+      "quarterly": false,
+      "bi_annually": false,
+      "annually": false,
+      "need_basis": false
+    },
+    "primary_frequency": "monthly"
+  },
+  {
+    "id": 18,
+    "category": "Weather Instrument",
+    "task_name": "Inspection & Validation",
+    "activity": "Check Pyranometer, Wind & Rain Guage and Ambient Thermometer",
+    "frequency_flags": {
+      "daily": false,
+      "weekly": false,
+      "monthly": true,
+      "quarterly": false,
+      "bi_annually": false,
+      "annually": false,
+      "need_basis": false
+    },
+    "primary_frequency": "monthly"
+  },
+  {
+    "id": 19,
+    "category": "Weather Instrument",
+    "task_name": "Cleaning",
+    "activity": "Clean Pyranometer with soft cloths",
+    "frequency_flags": {
+      "daily": false,
+      "weekly": true,
+      "monthly": false,
+      "quarterly": false,
+      "bi_annually": false,
+      "annually": false,
+      "need_basis": false
+    },
+    "primary_frequency": "weekly"
+  },
+  {
+    "id": 20,
+    "category": "Switchgears",
+    "task_name": "Inspection",
+    "activity": "Check for busbar tightness, main breaker joint, inverter breaker joint, control cable tightness, and panel body earthing tightness",
+    "frequency_flags": {
+      "daily": false,
+      "weekly": false,
+      "monthly": false,
+      "quarterly": false,
+      "bi_annually": false,
+      "annually": true,
+      "need_basis": false
+    },
+    "primary_frequency": "annually"
+  },
+  {
+    "id": 21,
+    "category": "Switchgears",
+    "task_name": "Inspection",
+    "activity": "IR Thermal imaging and Exhaust fans check",
+    "frequency_flags": {
+      "daily": false,
+      "weekly": false,
+      "monthly": false,
+      "quarterly": true,
+      "bi_annually": false,
+      "annually": false,
+      "need_basis": false
+    },
+    "primary_frequency": "quarterly"
+  },
+  {
+    "id": 22,
+    "category": "Switchgears",
+    "task_name": "Service",
+    "activity": "Clean/Remove dust. Check for breakers reliability",
+    "frequency_flags": {
+      "daily": false,
+      "weekly": false,
+      "monthly": false,
+      "quarterly": false,
+      "bi_annually": false,
+      "annually": true,
+      "need_basis": false
+    },
+    "primary_frequency": "annually"
+  },
+  {
+    "id": 23,
+    "category": "Transformer",
+    "task_name": "Inspection",
+    "activity": "Check oil level, temperature gauges, breather, silica gel, and any abnormal sound",
+    "frequency_flags": {
+      "daily": true,
+      "weekly": false,
+      "monthly": false,
+      "quarterly": false,
+      "bi_annually": false,
+      "annually": false,
+      "need_basis": false
+    },
+    "primary_frequency": "daily"
+  },
+  {
+    "id": 24,
+    "category": "Monitoring",
+    "task_name": "Performance monitoring",
+    "activity": "Monitor strings and inverters performance on SCADA",
+    "frequency_flags": {
+      "daily": true,
+      "weekly": false,
+      "monthly": false,
+      "quarterly": false,
+      "bi_annually": false,
+      "annually": false,
+      "need_basis": false
+    },
+    "primary_frequency": "daily"
+  },
+  {
+    "id": 25,
+    "category": "Monitoring",
+    "task_name": "Energy production monitoring",
+    "activity": "Compare actual output to expected output for time of year",
+    "frequency_flags": {
+      "daily": false,
+      "weekly": false,
+      "monthly": true,
+      "quarterly": false,
+      "bi_annually": false,
+      "annually": false,
+      "need_basis": false
+    },
+    "primary_frequency": "monthly"
+  },
+  {
+    "id": 26,
+    "category": "Monitoring",
+    "task_name": "Inspection",
+    "activity": "Ensure monitoring software is working correctly",
+    "frequency_flags": {
+      "daily": false,
+      "weekly": true,
+      "monthly": false,
+      "quarterly": false,
+      "bi_annually": false,
+      "annually": false,
+      "need_basis": false
+    },
+    "primary_frequency": "weekly"
+  },
+  {
+    "id": 27,
+    "category": "Monitoring",
+    "task_name": "Historical data review",
+    "activity": "Analyze trend to identify any potential performance issue",
+    "frequency_flags": {
+      "daily": false,
+      "weekly": false,
+      "monthly": false,
+      "quarterly": true,
+      "bi_annually": false,
+      "annually": false,
+      "need_basis": false
+    },
+    "primary_frequency": "quarterly"
+  },
+  {
+    "id": 28,
+    "category": "Monitoring",
+    "task_name": "Meter reading verification",
+    "activity": "Confirm meter readings match actual production",
+    "frequency_flags": {
+      "daily": true,
+      "weekly": false,
+      "monthly": false,
+      "quarterly": false,
+      "bi_annually": false,
+      "annually": false,
+      "need_basis": false
+    },
+    "primary_frequency": "daily"
+  },
+  {
+    "id": 29,
+    "category": "Monitoring",
+    "task_name": "Backup power system testing",
+    "activity": "If applicable, ensure backup power system is functional",
+    "frequency_flags": {
+      "daily": false,
+      "weekly": false,
+      "monthly": false,
+      "quarterly": true,
+      "bi_annually": false,
+      "annually": false,
+      "need_basis": false
+    },
+    "primary_frequency": "quarterly"
+  },
+  {
+    "id": 30,
+    "category": "Protective Devices",
+    "task_name": "Conduct ER Test",
+    "activity": "Check and verify earth resistance",
+    "frequency_flags": {
+      "daily": false,
+      "weekly": false,
+      "monthly": true,
+      "quarterly": false,
+      "bi_annually": false,
+      "annually": false,
+      "need_basis": false
+    },
+    "primary_frequency": "monthly"
+  },
+  {
+    "id": 31,
+    "category": "Protective Devices",
+    "task_name": "Check and Inspection",
+    "activity": "Check connection tightness, Corrosion, Solar panel and Inverter earthing condition",
+    "frequency_flags": {
+      "daily": false,
+      "weekly": false,
+      "monthly": false,
+      "quarterly": true,
+      "bi_annually": false,
+      "annually": false,
+      "need_basis": false
+    },
+    "primary_frequency": "quarterly"
+  },
+  {
+    "id": 32,
+    "category": "Protective Devices",
+    "task_name": "Check and Inspection",
+    "activity": "Verify the condition of Lighting Arrestors",
+    "frequency_flags": {
+      "daily": false,
+      "weekly": false,
+      "monthly": false,
+      "quarterly": false,
+      "bi_annually": false,
+      "annually": true,
+      "need_basis": false
+    },
+    "primary_frequency": "annually"
+  },
+  {
+    "id": 33,
+    "category": "Protective Devices",
+    "task_name": "Grounding system verification",
+    "activity": "Ensure proper grounding to prevent electrical hazards",
+    "frequency_flags": {
+      "daily": false,
+      "weekly": false,
+      "monthly": false,
+      "quarterly": true,
+      "bi_annually": false,
+      "annually": false,
+      "need_basis": false
+    },
+    "primary_frequency": "quarterly"
+  },
+  {
+    "id": 34,
+    "category": "Safety",
+    "task_name": "Labeling verification",
+    "activity": "Ensure all components are properly labeled for safety",
+    "frequency_flags": {
+      "daily": false,
+      "weekly": false,
+      "monthly": false,
+      "quarterly": true,
+      "bi_annually": false,
+      "annually": false,
+      "need_basis": false
+    },
+    "primary_frequency": "quarterly"
+  },
+  {
+    "id": 35,
+    "category": "Safety",
+    "task_name": "Emergency procedures review",
+    "activity": "Confirm personnel are aware of emergency protocols",
+    "frequency_flags": {
+      "daily": false,
+      "weekly": false,
+      "monthly": false,
+      "quarterly": false,
+      "bi_annually": true,
+      "annually": false,
+      "need_basis": false
+    },
+    "primary_frequency": "bi_annually"
+  },
+  {
+    "id": 36,
+    "category": "Safety",
+    "task_name": "Safety equipment test",
+    "activity": "Test functionality of safety equipment",
+    "frequency_flags": {
+      "daily": false,
+      "weekly": false,
+      "monthly": false,
+      "quarterly": true,
+      "bi_annually": false,
+      "annually": false,
+      "need_basis": false
+    },
+    "primary_frequency": "quarterly"
+  }
+]

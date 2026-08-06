@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>17MW Solar Plant - O&M Scheduler</title>
+<link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+  <header class="topbar">
+    <h1>17MW Solar Plant &mdash; O&amp;M Scheduler</h1>
+    <nav>
+      <button id="nav-calendar" class="nav-btn active">Calendar</button>
+      <button id="nav-tracker" class="nav-btn">Task Tracker</button>
+      <span id="editor-status" class="editor-status">Viewer mode</span>
+      <button id="unlock-btn" class="nav-btn small">Unlock editing</button>
+    </nav>
+  </header>
+
+  <main>
+    <section id="view-calendar" class="view active">
+      <div class="calendar-layout">
+        <div class="calendar-panel">
+          <div class="month-controls">
+            <button id="prev-month">&laquo;</button>
+            <h2 id="month-label"></h2>
+            <button id="next-month">&raquo;</button>
+          </div>
+          <div id="calendar-grid" class="calendar-grid"></div>
+        </div>
+        <div class="daily-panel">
+          <h3 id="daily-title">Daily Activities</h3>
+          <p class="hint">Click a date to see tasks due that day.</p>
+          <ul id="daily-list" class="task-list"></ul>
+        </div>
+      </div>
+    </section>
+
+    <section id="view-tracker" class="view">
+      <div class="tracker-layout">
+        <div class="tracker-panel">
+          <h3>Tasks</h3>
+          <ul id="tracker-task-list" class="task-list clickable"></ul>
+        </div>
+        <div class="tracker-detail">
+          <h3 id="tracker-title">Select a task</h3>
+          <div class="range-toggle">
+            <button id="range-weekly" class="range-btn active">Weekly</button>
+            <button id="range-monthly" class="range-btn">Monthly</button>
+          </div>
+          <div id="progress-summary" class="progress-summary"></div>
+          <ul id="tracker-occurrences" class="task-list"></ul>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <script src="/static/app.js"></script>
+</body>
+</html>

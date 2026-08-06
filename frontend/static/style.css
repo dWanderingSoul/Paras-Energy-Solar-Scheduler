@@ -1,0 +1,92 @@
+:root {
+  --brand: #1e5f3f;
+  --brand-light: #e8f3ec;
+  --border: #d8dfe0;
+  --text: #1c2b28;
+  --muted: #6b7a76;
+  --done: #2e8b57;
+  --missing: #c0442c;
+  font-family: -apple-system, Segoe UI, Roboto, Arial, sans-serif;
+}
+* { box-sizing: border-box; }
+body { margin: 0; background: #f6f8f7; color: var(--text); }
+
+.topbar {
+  background: var(--brand); color: white;
+  padding: 14px 24px; display: flex; align-items: center; justify-content: space-between;
+  flex-wrap: wrap; gap: 10px;
+}
+.topbar h1 { font-size: 18px; margin: 0; }
+nav { display: flex; align-items: center; gap: 8px; }
+.nav-btn {
+  background: rgba(255,255,255,0.15); color: white; border: none;
+  padding: 8px 14px; border-radius: 6px; cursor: pointer; font-size: 14px;
+}
+.nav-btn.active { background: white; color: var(--brand); font-weight: 600; }
+.nav-btn.small { font-size: 12px; padding: 6px 10px; }
+.editor-status { font-size: 12px; opacity: 0.85; margin-left: 12px; }
+
+main { max-width: 1100px; margin: 20px auto; padding: 0 16px; }
+.view { display: none; }
+.view.active { display: block; }
+
+.calendar-layout, .tracker-layout { display: flex; gap: 20px; flex-wrap: wrap; }
+.calendar-panel { flex: 2; min-width: 320px; }
+.daily-panel, .tracker-detail { flex: 1; min-width: 280px; }
+.tracker-panel { flex: 1; min-width: 220px; }
+
+.calendar-panel, .daily-panel, .tracker-panel, .tracker-detail {
+  background: white; border: 1px solid var(--border); border-radius: 10px; padding: 16px;
+}
+
+.month-controls { display: flex; align-items: center; justify-content: space-between; margin-bottom: 10px; }
+.month-controls button {
+  background: var(--brand-light); border: none; width: 32px; height: 32px; border-radius: 6px;
+  cursor: pointer; font-size: 16px; color: var(--brand);
+}
+.calendar-grid { display: grid; grid-template-columns: repeat(7, 1fr); gap: 4px; }
+.cal-weekday { font-size: 11px; color: var(--muted); text-align: center; padding: 4px 0; font-weight: 600; }
+.cal-day {
+  aspect-ratio: 1; display: flex; flex-direction: column; align-items: center; justify-content: center;
+  border-radius: 6px; cursor: pointer; font-size: 13px; border: 1px solid transparent; position: relative;
+}
+.cal-day:hover { background: var(--brand-light); }
+.cal-day.empty { cursor: default; }
+.cal-day.selected { background: var(--brand); color: white; }
+.cal-day .badge {
+  font-size: 9px; margin-top: 2px; background: var(--muted); color: white;
+  border-radius: 8px; padding: 0 5px;
+}
+.cal-day.has-tasks .badge { background: var(--brand); }
+.cal-day.selected .badge { background: rgba(255,255,255,0.3); }
+.cal-day.all-done .badge { background: var(--done); }
+
+.hint { font-size: 12px; color: var(--muted); margin-top: -4px; }
+
+.task-list { list-style: none; padding: 0; margin: 10px 0 0; }
+.task-list li {
+  padding: 10px; border: 1px solid var(--border); border-radius: 8px; margin-bottom: 8px;
+  font-size: 13px;
+}
+.task-list.clickable li { cursor: pointer; }
+.task-list.clickable li:hover { background: var(--brand-light); }
+.task-list.clickable li.selected { background: var(--brand); color: white; }
+.task-cat { font-size: 11px; color: var(--muted); text-transform: uppercase; letter-spacing: 0.03em; }
+.task-list.clickable li.selected .task-cat { color: rgba(255,255,255,0.75); }
+.task-name { font-weight: 600; margin: 2px 0; }
+.task-detail { font-size: 12px; color: var(--muted); }
+.task-row { display: flex; align-items: center; justify-content: space-between; gap: 8px; }
+.done-toggle { width: 18px; height: 18px; }
+
+.range-toggle { display: flex; gap: 6px; margin-bottom: 10px; }
+.range-btn {
+  background: var(--brand-light); border: none; padding: 6px 12px; border-radius: 6px;
+  cursor: pointer; font-size: 12px; color: var(--brand);
+}
+.range-btn.active { background: var(--brand); color: white; }
+
+.progress-summary { display: flex; gap: 12px; margin-bottom: 12px; }
+.progress-stat { flex: 1; text-align: center; background: var(--brand-light); border-radius: 8px; padding: 10px 6px; }
+.progress-stat .num { font-size: 20px; font-weight: 700; color: var(--brand); }
+.progress-stat.missing .num { color: var(--missing); }
+.progress-stat .label { font-size: 10px; color: var(--muted); text-transform: uppercase; }
