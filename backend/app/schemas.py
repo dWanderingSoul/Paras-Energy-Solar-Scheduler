@@ -9,9 +9,42 @@ class TaskOut(BaseModel):
     task_name: str
     activity: str
     frequency: str
+    is_drafted: bool
+    is_submitted: bool
+    is_reviewed: bool
+    is_approval: bool
+    is_approved: bool
 
     class Config:
         from_attributes = True
+
+
+class WorkflowUpdate(BaseModel):
+    field: str  # one of: drafted, submitted, reviewed, approval, approved
+    value: bool
+
+
+class MonthlyTrackerRow(BaseModel):
+    task_id: int
+    category: str
+    task_name: str
+    todo_percent: float
+    done_percent: float
+    is_drafted: bool
+    is_submitted: bool
+    is_reviewed: bool
+    is_approval: bool
+    is_approved: bool
+
+
+class WeeklyOverviewOut(BaseModel):
+    week_start: date_type
+    week_end: date_type
+    total: int
+    completed: int
+    missing: int
+    progress_percent: float
+    task_grid: list[dict]  # [{task_id, category, task_name, days: {date: bool}}]
 
 
 class OccurrenceOut(BaseModel):

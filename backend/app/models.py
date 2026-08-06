@@ -13,6 +13,14 @@ class MaintenanceTask(Base):
     activity = Column(Text, nullable=False)          # full description
     frequency = Column(String, nullable=False)       # daily/weekly/monthly/...
 
+    # Workflow stage checkmarks, same as the Excel Monthly Task Tracker.
+    # These are per-task, manually toggled - not derived from occurrences.
+    is_drafted = Column(Boolean, default=False, nullable=False)
+    is_submitted = Column(Boolean, default=False, nullable=False)
+    is_reviewed = Column(Boolean, default=False, nullable=False)
+    is_approval = Column(Boolean, default=False, nullable=False)
+    is_approved = Column(Boolean, default=False, nullable=False)
+
     occurrences = relationship("TaskOccurrence", back_populates="task")
 
 

@@ -44,13 +44,12 @@ def dates_for_weekday(year: int, weekday_index: int):
 
 
 def seed(year: int):
+    # drop_all + create_all so schema changes (e.g. new columns) take effect -
+    # this wipes all done/workflow status, which is fine pre-launch but NOT
+    # once the team is relying on saved progress day to day.
+    Base.metadata.drop_all(bind=engine)
     Base.metadata.create_all(bind=engine)
     db = SessionLocal()
-
-    # wipe existing data for a clean re-seed
-    db.query(TaskOccurrence).delete()
-    db.query(MaintenanceTask).delete()
-    db.commit()
 
     pms_tasks = json.loads((DATA_DIR / "pms_tasks.json").read_text())
     rosters = json.loads((DATA_DIR / "rosters.json").read_text())
